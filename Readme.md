@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Олимпиев](https://up.htmlacademy.ru/adaptive/18/user/993655).
-* Наставник: [Александр Трасковский].
+* Наставник: [Александр Трасковский](https://htmlacademy.ru/profile/id454037).
 
 ---
 
