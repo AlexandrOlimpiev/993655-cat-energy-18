@@ -24,3 +24,8 @@ html {
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}

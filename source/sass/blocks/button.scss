@@ -9,8 +9,8 @@
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
-  color: $text-alt;
-  background-color: $design;
+  color: $color-text-alt;
+  background-color: $color-design;
   min-height: 40px;
   text-decoration: none;
 }
@@ -21,6 +21,6 @@
 }
 
 .button--grey {
-  background-color: $bg-alt;
-  color: $content;
+  background-color: $color-bg-alt;
+  color: $color-content;
 }

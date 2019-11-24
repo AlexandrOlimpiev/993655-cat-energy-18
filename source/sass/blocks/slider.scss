@@ -5,7 +5,7 @@
 }
 
 .slider__toggle {
-  font-family: "Oswald", "Arial", sans-serif;
+  @include font-default;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -14,7 +14,7 @@
 .slider__scale {
   width: 84px;
   height: 14px;
-  background-color: #ffffff;
+  background-color: $color-bg;
 }
 
 .slider__image {

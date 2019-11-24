@@ -1,10 +1,4 @@
 .page {
-  background-color: $bg;
+  background-color: $color-bg;
   margin: 0;
-}
-
-.page__header,
-.page__main-catalog,
-.page__main-form {
-  @include container;
 }

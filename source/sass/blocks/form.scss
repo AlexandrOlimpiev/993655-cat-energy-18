@@ -26,13 +26,13 @@
   padding: 31px 0;
   font-size: 24px;
   line-height: 1;
-  color: $title;
+  color: $color-title;
 }
 
 .form__label {
   font-size: 16px;
   line-height: 1.13;
-  color: $label;
+  color: $color-label;
   text-transform: uppercase;
   flex-shrink: 0;
 }
@@ -47,9 +47,9 @@
     @include font-default;
     font-size: 16px;
     line-height: 1.13;
-    color: $content;
+    color: $color-content;
     text-transform: uppercase;
-    border-color: $pinkish-grey;
+    border-color: $color-pinkish-grey;
   }
 }
 
@@ -71,7 +71,7 @@
   display: block;
   font-size: 14px;
   line-height: 1.14;
-  color: $content;
+  color: $color-content;
   text-align: center;
 }
 
@@ -110,6 +110,6 @@
 .form__fieldset--radio {
   padding-top: 21px;
   padding-bottom: 22px;
-  border-top: 1px solid $white-three;
-  border-bottom: 1px solid $white-three;
+  border-top: 1px solid $color-white-three;
+  border-bottom: 1px solid $color-white-three;
 }

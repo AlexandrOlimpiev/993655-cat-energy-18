@@ -1,16 +1,11 @@
 .example {
-  background-color: $bg-alt;
-  color: $title;
+  background-color: $color-bg-alt;
+  color: $color-title;
 }
 
 .example__inner {
-  @include container;
   @include side-padding;
   padding-bottom: 40px;
-}
-
-.example__slider {
-  @include container;
 }
 
 .example__title {
@@ -23,7 +18,7 @@
 
 .example__text {
   @include font-alt;
-  color: $content;
+  color: $color-content;
   font-size: 14px;
   line-height: 1.29;
   margin: 0;
@@ -37,7 +32,7 @@
 .example__achievement {
   position: relative;
   text-align: center;
-  border: solid 1px $pinkish-grey;
+  border: solid 1px $color-pinkish-grey;
   width: 124px;
   margin-bottom: 35px;
 
@@ -65,8 +60,8 @@
   left: 20px;
   width: 87px;
   padding: 0 1px;
-  background-color: $bg-alt;
-  color: $content;
+  background-color: $color-bg-alt;
+  color: $color-content;
   position: absolute;
   font-size: 12px;
   line-height: 1;

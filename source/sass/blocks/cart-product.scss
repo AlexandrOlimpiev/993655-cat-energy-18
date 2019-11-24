@@ -10,7 +10,7 @@
   @include font-default;
   font-size: 16px;
   line-height: 1.25;
-  color: $title;
+  color: $color-title;
   max-width: 72px;
   margin: 0;
 }
@@ -23,5 +23,5 @@
   @include font-alt;
   font-size: 12px;
   line-height: 1.33;
-  color: $content;
+  color: $color-content;
 }

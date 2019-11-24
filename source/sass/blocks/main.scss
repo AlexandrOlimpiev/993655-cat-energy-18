@@ -1,7 +1,6 @@
 .main__promo,
-.main__product-lines,
+.main__product-line,
 .main__features {
-  @include container;
   @include side-padding;
 }
 

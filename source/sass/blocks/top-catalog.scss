@@ -4,9 +4,9 @@
 
 .top-catalog__item {
   @include side-padding;
-  border-top: 1px solid $white-three;
+  border-top: 1px solid $color-white-three;
 }
 
 .top-catalog__item:last-child {
-  border-bottom: 1px solid $white-three;
+  border-bottom: 1px solid $color-white-three;
 }

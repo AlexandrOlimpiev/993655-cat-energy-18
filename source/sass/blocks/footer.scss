@@ -1,11 +1,6 @@
 .footer__bottom {
   @include side-padding;
-  background-color: $bg-alt;
-}
-
-.footer__bottom,
-.footer__contact {
-  @include container;
+  background-color: $color-bg-alt;
 }
 
 .footer__developer-link {
@@ -15,5 +10,14 @@
   font-size: 16px;
   line-height: 1;
   margin-right: auto;
-  color: $content;
+  color: $color-content;
+}
+
+.footer__logo {
+  display: flex;
+  padding: 39px 10px 31px 10px;
+}
+
+.footer__logo-image {
+  margin: 0 auto;
 }

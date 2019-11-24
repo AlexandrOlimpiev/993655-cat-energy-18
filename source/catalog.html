@@ -9,7 +9,7 @@
 
 <body class="page">
 
-  <header class="page__header header">
+  <header class="page__header header container">
     <a class="header__logo logo"><img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина CAT ENERGY"></a>
     <nav class="header__nav nav">
       <button class="nav__toggle-burger toggle-burger toggle-burger--active" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -21,7 +21,7 @@
     </nav>
   </header>
 
-  <main class="page__main-catalog main-catalog">
+  <main class="page__main-catalog main-catalog container">
     <h1>Каталог продукции</h1>
     <section class="main-catalog__top-catalog top-catalog">
       <h2 class="visually-hidden">Главные товары</h2>
@@ -267,7 +267,7 @@
   </main>
 
   <footer class="page__footer footer">
-    <section class="footer__contact contact">
+    <section class="footer__contact contact container">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="contact__info">
         <p class="contact__invitation">Приглашаем к сотрудничеству дилеров!</p>
@@ -276,16 +276,18 @@
       <div class="contact__map-interactive map-interactive"></div>
     </section>
     <div class="footer__bottom">
-      <a class="footer__logo logo-footer"><img class="logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина CAT ENERGY"></a>
-      <section class="footer__social-links social-links">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social-links__list">
-          <li class="social-links__item"><a class="social-links__vk" href=""><span class="visually-hidden">Вконтакте</span></a></li>
-          <li class="social-links__item"><a class="social-links__insta" href=""><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="social-links__item"><a class="social-links__fb" href=""><span class="visually-hidden">Фейсбук</span></a></li>
-        </ul>
-      </section>
-      <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на обучающий курс">HTML Academy</a>
+      <div class="container">
+        <a class="footer__logo"><img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина CAT ENERGY"></a>
+        <section class="footer__social-links social-links">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social-links__list">
+            <li class="social-links__item"><a class="social-links__vk" href=""><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social-links__item"><a class="social-links__insta" href=""><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="social-links__item"><a class="social-links__fb" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+          </ul>
+        </section>
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на обучающий курс">HTML Academy</a>
+      </div>
     </div>
   </footer>
 
