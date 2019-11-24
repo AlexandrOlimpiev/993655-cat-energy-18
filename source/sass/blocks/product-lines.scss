@@ -1,0 +1,11 @@
+.product-lines__list {
+  @include reset-list;
+}
+
+.product-lines__item {
+  margin-bottom: 20px;
+}
+
+.product-lines__item:last-child {
+  margin-bottom: 0;
+}

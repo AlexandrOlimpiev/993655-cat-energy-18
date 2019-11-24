@@ -1,0 +1,81 @@
+.example {
+  background-color: $bg-alt;
+  color: $title;
+}
+
+.example__inner {
+  @include container;
+  @include side-padding;
+  padding-bottom: 40px;
+}
+
+.example__slider {
+  @include container;
+}
+
+.example__title {
+  @include font-default;
+  font-size: 36px;
+  line-height: 1.67;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__text {
+  @include font-alt;
+  color: $content;
+  font-size: 14px;
+  line-height: 1.29;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__result {
+  display: flex;
+}
+
+.example__achievement {
+  position: relative;
+  text-align: center;
+  border: solid 1px $pinkish-grey;
+  width: 124px;
+  margin-bottom: 35px;
+
+  &--left {
+    margin-right: auto;
+  }
+
+  &--right {
+    margin-left: auto;
+  }
+}
+
+.example__achievement-value {
+  @include font-default;
+  display: block;
+  padding: 16px 10px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.example__achievement-title {
+  @include font-alt;
+  display: block;
+  top: 48px;
+  left: 20px;
+  width: 87px;
+  padding: 0 1px;
+  background-color: $bg-alt;
+  color: $content;
+  position: absolute;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.example__cost {
+  @include font-default;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.43;
+}

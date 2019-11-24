@@ -1,0 +1,25 @@
+.main-form {
+  @include font-default;
+  padding-top: 20px;
+  padding-bottom: 34px;
+
+  h1 {
+    @include side-padding;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.67;
+    color: $title;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  p {
+    @include side-padding;
+    font-size: 14px;
+    line-height: 1.29;
+    color: $title;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+}

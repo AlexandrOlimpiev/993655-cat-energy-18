@@ -1,0 +1,17 @@
+.main-catalog {
+  padding-top: 20px;
+
+  h1 {
+    @include side-padding;
+    @include font-default;
+    font-size: 36px;
+    line-height: 1.67;
+    color: $title;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.main-catalog__extra-catalog {
+  @include side-padding;
+}

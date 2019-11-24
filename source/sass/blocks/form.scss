@@ -1,0 +1,115 @@
+.form {
+  @include font-default;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__fieldset {
+  @include side-padding;
+  border: none;
+  margin: 0;
+}
+
+.form__button {
+  margin: 34px 0 22px 0;
+  width: 100%;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__legend {
+  padding: 31px 0;
+  font-size: 24px;
+  line-height: 1;
+  color: $title;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 1.13;
+  color: $label;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.form__input,
+.form__textarea {
+  @include font-default;
+  padding: 0 16px;
+  flex-grow: 1;
+
+  &::placeholder {
+    @include font-default;
+    font-size: 16px;
+    line-height: 1.13;
+    color: $content;
+    text-transform: uppercase;
+    border-color: $pinkish-grey;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  height: 250px;
+  padding: 13px 12px;
+}
+
+.form__input[type="email"],
+.form__input[type="tel"],
+.form__input[type="text"] {
+  min-height: 45px;
+  margin-left: 15px;
+}
+
+.form__details {
+  @include font-alt;
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $content;
+  text-align: center;
+}
+
+.form__fieldset--text,
+.form__fieldset--date {
+  li {
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__fieldset--radio,
+.form__fieldset--checkbox {
+  li {
+    margin-bottom: 13px;
+    padding-left: 46px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__input {
+    display: none;
+  }
+}
+
+.form__fieldset--text {
+  padding-top: 5px;
+  padding-bottom: 23px;
+}
+
+.form__fieldset--radio {
+  padding-top: 21px;
+  padding-bottom: 22px;
+  border-top: 1px solid $white-three;
+  border-bottom: 1px solid $white-three;
+}

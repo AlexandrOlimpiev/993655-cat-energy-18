@@ -1,0 +1,32 @@
+.features {
+  padding-top: 20px;
+  padding-bottom: 42px;
+
+}
+
+.features__title {
+  @include font-default;
+  font-weight: inherit;
+  font-size: 36px;
+  line-height: 1.67;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.features__list {
+  @include font-alt;
+  font-size: 14px;
+  line-height: 1.29;
+  padding: 10px 5px 22px 80px;
+  list-style: none;
+  margin: 0;
+
+}
+
+.features__item {
+  margin-bottom: 20px;
+}
+
+.features__item:last-child {
+  margin-bottom: 0;
+}

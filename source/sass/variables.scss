@@ -1,0 +1,23 @@
+//Цвета
+$black: #000000;
+$black-two: #222222;
+$black-three: #111111;
+$greyish-brown: #444444;
+$brownish-grey: #666666;
+$pinkish-grey: #cdcdcd;
+$white: #ffffff;
+$white-two: #f2f2f2;
+$white-three:#ededed;
+$leaf: #68b738;
+
+$design: $leaf; //Цвет оформления (тема)
+$bg: $white; //Цвет фона
+$bg-alt: $white-two; //Дополнительный цвет фона
+$content: $greyish-brown; //Цвет текстового контента
+$title: $black-three; //Цвет заголовков и пунктов меню
+$label: $black-two; //Цвет меток формы
+$text-alt: $white; //Цвет шрифта для цветных элементов
+
+
+$width-blocks:320px; //ширина страницы
+$side-padding:20px; //боковые отступы в блоках

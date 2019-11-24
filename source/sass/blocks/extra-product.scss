@@ -1,0 +1,23 @@
+.extra-product {
+  padding: 14px 0 17px 0;
+}
+
+.extra-product__title {
+  @include font-default;
+  font-size: 16px;
+  line-height: 1;
+  color: $label;
+}
+
+.extra-product__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-product__size,
+.extra-product__price {
+  @include font-alt;
+  font-size: 14px;
+  line-height: 1;
+  color: $content;
+}

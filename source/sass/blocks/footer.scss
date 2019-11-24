@@ -1,0 +1,19 @@
+.footer__bottom {
+  @include side-padding;
+  background-color: $bg-alt;
+}
+
+.footer__bottom,
+.footer__contact {
+  @include container;
+}
+
+.footer__developer-link {
+  @include font-alt;
+  @include reset-link;
+  padding: 31px 0;
+  font-size: 16px;
+  line-height: 1;
+  margin-right: auto;
+  color: $content;
+}

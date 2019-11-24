@@ -1,0 +1,24 @@
+.contact__info {
+  @include side-padding;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.contact__invitation {
+  @include font-default;
+  width: 50%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $title;
+}
+
+.contact__address {
+  @include font-alt;
+  width: 50%;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $content;
+}

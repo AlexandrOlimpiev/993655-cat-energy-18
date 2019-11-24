@@ -1,0 +1,33 @@
+.product-line {
+  background-color: $bg-alt;
+  padding: 31px 20px 22px 20px;
+  width: 280px;
+  position: relative;
+}
+
+.product-line__title {
+  @include font-default;
+  font-size: 24px;
+  line-height: 1.54;
+  text-transform: uppercase;
+  padding-left: 72px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: $title;
+}
+
+.product-line__text {
+  @include font-alt;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $content;
+}
+
+.product-line__link {
+  @include font-default;
+  @include reset-link;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $title;
+}

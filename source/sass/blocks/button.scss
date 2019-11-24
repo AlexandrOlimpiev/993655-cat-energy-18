@@ -1,0 +1,26 @@
+.button {
+  @include font-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: $text-alt;
+  background-color: $design;
+  min-height: 40px;
+  text-decoration: none;
+}
+
+.button--small {
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.button--grey {
+  background-color: $bg-alt;
+  color: $content;
+}

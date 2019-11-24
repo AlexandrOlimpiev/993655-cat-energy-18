@@ -1,0 +1,24 @@
+.extra-catalog__title {
+  @include font-default;
+  font-size: 24px;
+  line-height: 1;
+  color: $title;
+}
+
+.extra-catalog__list {
+  @include reset-list;
+}
+
+.extra-catalog__bonus {
+  width: 280px;
+  height: 289px;
+  padding: 190px 60px 43px 60px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+}
+
+.extra-catalog__bonus-text {
+  @include font-alt;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $text-alt;
+}
