@@ -10,6 +10,10 @@
 }
 
 .extra-catalog__bonus {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 40px;
   position: relative;
   width: 280px;
   height: 289px;
@@ -17,11 +21,11 @@
 }
 
 .extra-catalog__bonus-text {
+  display: block;
+  width: 165px;
   @include font-alt;
-  position: absolute;
-  bottom: 43px;
-  left: 60px;
   font-size: 16px;
   line-height: 1.25;
   color: $color-text-alt;
+  text-align: center;
 }
