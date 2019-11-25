@@ -1,0 +1,27 @@
+.cart-product {
+  padding-bottom: 25px;
+}
+
+.cart-product__inner {
+  display: flex;
+}
+
+.cart-product__title {
+  @include font-default;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $color-title;
+  max-width: 72px;
+  margin: 0;
+}
+
+.cart-product__link {
+  @include reset-link;
+}
+
+.cart-product__info {
+  @include font-alt;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $color-content;
+}

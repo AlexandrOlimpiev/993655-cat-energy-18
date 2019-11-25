@@ -1,0 +1,34 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin reset-link {
+  display: block;
+  text-decoration: none;
+}
+
+@mixin font-default {
+  font-family: "Oswald",
+    "Arial",
+    sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+@mixin font-alt {
+  font-family: "Arial",
+    sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+@mixin container {
+  width: $width-blocks;
+  margin: 0 auto;
+}
+
+@mixin side-padding {
+  padding: 0 $side-padding;
+}

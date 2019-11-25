@@ -1,0 +1,9 @@
+.main__promo,
+.main__product-line,
+.main__features {
+  @include side-padding;
+}
+
+.main__promo {
+  margin-bottom: 22px;
+}

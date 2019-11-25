@@ -1,0 +1,22 @@
+.promo-block {
+  padding: 80px 0 25px 0;
+  text-align: center;
+}
+
+.promo-block__title {
+  @include font-default;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $color-title;
+}
+
+.promo-block__slogan {
+  @include font-alt;
+  display: block;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $color-title;
+  margin-bottom: 20px;
+}

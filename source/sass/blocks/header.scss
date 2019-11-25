@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header__logo {
+  border-bottom: 1px solid $color-white-three;
+}

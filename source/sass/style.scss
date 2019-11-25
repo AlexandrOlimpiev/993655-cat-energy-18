@@ -1,0 +1,34 @@
+//Переменные
+@import "variables";
+//Общие стили
+@import "common-styles";
+//Шрифты
+@import "fonts";
+//Миксины
+@import "mixins";
+//Блоки
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/toggle-burger";
+@import "blocks/menu";
+@import "blocks/footer";
+@import "blocks/contact";
+@import "blocks/social-links";
+@import "blocks/map-interactive";
+@import "blocks/main";
+@import "blocks/example";
+@import "blocks/slider";
+@import "blocks/promo";
+@import "blocks/button";
+@import "blocks/product-line";
+@import "blocks/features";
+@import "blocks/cart-product";
+@import "blocks/top-catalog";
+@import "blocks/extra-catalog";
+@import "blocks/main-catalog";
+@import "blocks/promo-block";
+@import "blocks/extra-product";
+@import "blocks/main-form.scss";
+@import "blocks/form.scss";

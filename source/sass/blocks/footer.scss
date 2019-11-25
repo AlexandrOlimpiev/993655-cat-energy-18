@@ -1,0 +1,23 @@
+.footer__bottom {
+  @include side-padding;
+  background-color: $color-bg-alt;
+}
+
+.footer__developer-link {
+  @include font-alt;
+  @include reset-link;
+  padding: 31px 0;
+  font-size: 16px;
+  line-height: 1;
+  margin-right: auto;
+  color: $color-content;
+}
+
+.footer__logo {
+  display: flex;
+  padding: 39px 10px 31px 10px;
+}
+
+.footer__logo-image {
+  margin: 0 auto;
+}

@@ -4,14 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
 
-  <header class="page__header header">
-    <a class="header__logo logo-1"><img class="logo__image" src="https://via.placeholder.com/191x39" width="191" height="39" alt="Логотип магазина CAT ENERGY"></a>
+  <header class="page__header header container">
+    <a class="header__logo logo"><img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина CAT ENERGY"></a>
     <nav class="header__nav nav">
-      <button class="nav__toggle-burger toggle-burger" type="button"><span class="visually-hidden">Показать меню</span></button>
+      <button class="nav__toggle-burger toggle-burger toggle-burger--active" type="button"><span class="visually-hidden">Показать меню</span></button>
       <ul class="nav__menu menu">
         <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
         <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог продукции</a></li>
@@ -20,11 +21,11 @@
     </nav>
   </header>
 
-  <main class="page__main main">
+  <main class="page__main-form main-form container">
     <h1>Подбор программы</h1>
     <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-    <form class="main__form form" action="https://echo.htmlacademy.ru" method="GET">
-      <fieldset class="form__fieldset">
+    <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset class="form__fieldset form__fieldset--text">
         <legend class="visually-hidden">Данные кота</legend>
         <ul class="form__list">
           <li>
@@ -41,7 +42,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--radio">
         <legend class="visually-hidden">Цель программы</legend>
         <ul class="form__list">
           <li>
@@ -58,7 +59,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--date">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
         <ul class="form__list">
           <li>
@@ -71,12 +72,12 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--textarea">
         <legend class="form__legend">Комментарий</legend>
         <label class="visually-hidden" for="comment">Поле комментария:</label>
         <textarea class="form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--checkbox">
         <legend class="form__legend">Дополнительно</legend>
         <ul class="form__list">
           <li>
@@ -103,25 +104,27 @@
   </main>
 
   <footer class="page__footer footer">
-    <section class="footer__contact contact">
+    <section class="footer__contact contact container">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <div class="contact__wrap">
+      <div class="contact__info">
         <p class="contact__invitation">Приглашаем к сотрудничеству дилеров!</p>
         <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="contact__map-interactive map-interactive"></div>
     </section>
-    <div class="footer__wrap">
-      <a class="footer__logo logo-2"><img class="logo__image" src="https://via.placeholder.com/191x39" width="128" height="24" alt="Логотип магазина CAT ENERGY"></a>
-      <section class="footer__social-links social-links">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social-links_list">
-          <li class="social-links_item"><a href=""><span class="visually-hidden">Вконтакте</span></a></li>
-          <li class="social-links_item"><a href=""><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="social-links_item"><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
-        </ul>
-      </section>
-      <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на обучающий курс">HTML Academy</a>
+    <div class="footer__bottom">
+      <div class="container">
+        <a class="footer__logo"><img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина CAT ENERGY"></a>
+        <section class="footer__social-links social-links">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social-links__list">
+            <li class="social-links__item"><a class="social-links__vk" href=""><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="social-links__item"><a class="social-links__insta" href=""><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="social-links__item"><a class="social-links__fb" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+          </ul>
+        </section>
+        <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на обучающий курс">HTML Academy</a>
+      </div>
     </div>
   </footer>
 

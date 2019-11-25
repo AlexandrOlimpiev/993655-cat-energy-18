@@ -1,0 +1,27 @@
+.slider__control {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.slider__toggle {
+  @include font-default;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__scale {
+  width: 84px;
+  height: 14px;
+  background-color: $color-bg;
+}
+
+.slider__image {
+  display: none;
+  margin-bottom: 35px;
+}
+
+.slider__image--show {
+  display: block;
+}
