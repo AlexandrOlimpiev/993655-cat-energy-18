@@ -1,9 +1,18 @@
 .menu {
   @include reset-list;
+  display: block;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
 }
 
 .menu__item {
   border-bottom: 1px solid $color-white-three;
+
+  @media (min-width: $breakpoint-tablet) {
+    border-bottom: none;
+  }
 }
 
 .menu__link {
@@ -13,7 +22,15 @@
   font-size: 20px;
   line-height: 1;
   color: $color-title;
-  padding: 24px;
+  padding: 24px 5px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 1.39;
+    color: $color-label;
+  }
 }

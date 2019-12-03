@@ -1,9 +1,22 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  @include side-padding;
+  display: block;
   position: relative;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 53px;
+  }
 }
 
 .header__logo {
   border-bottom: 1px solid $color-white-three;
+
+  @media (min-width: $breakpoint-tablet) {
+    border-bottom: none;
+  }
 }

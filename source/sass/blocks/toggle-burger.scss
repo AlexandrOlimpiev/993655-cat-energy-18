@@ -11,6 +11,10 @@
   border: none;
   box-shadow: none;
 
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+
   &--active {
     width: 19px;
     background-image: url("../img/icon-close.svg");

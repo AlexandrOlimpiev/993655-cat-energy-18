@@ -1,6 +1,14 @@
 .footer__bottom {
-  @include side-padding;
   background-color: $color-bg-alt;
+}
+
+.footer__inner {
+  @include side-padding;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__developer-link {
@@ -11,6 +19,10 @@
   line-height: 1;
   margin-right: auto;
   color: $color-content;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-right: 0;
+  }
 }
 
 .footer__logo {

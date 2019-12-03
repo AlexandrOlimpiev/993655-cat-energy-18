@@ -9,6 +9,13 @@
   text-decoration: none;
 }
 
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin font-default {
   font-family: "Oswald",
     "Arial",
@@ -24,11 +31,17 @@
   font-stretch: normal;
 }
 
-@mixin container {
-  width: $width-blocks;
-  margin: 0 auto;
-}
-
 @mixin side-padding {
-  padding: 0 $side-padding;
+  padding-right: $side-padding-mobile;
+  padding-left: $side-padding-mobile;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-right: $side-padding-tablet;
+    padding-left: $side-padding-tablet;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-right: $side-padding-desktop;
+    padding-left: $side-padding-desktop;
+  }
 }
