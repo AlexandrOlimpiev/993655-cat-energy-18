@@ -1,10 +1,40 @@
 .top-catalog__list {
   @include reset-list;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & :nth-child(2n) {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      margin-right: 0;
+    }
+  }
+
+  & :nth-child(4n) {
+    @media (min-width: $breakpoint-desktop) {
+      margin-right: 0;
+    }
+  }
 }
 
 .top-catalog__item {
-  @include side-padding;
   border-top: 1px solid $color-white-three;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    border-top: none;
+    margin: 0;
+    margin-top: 140px;
+    margin-right: 60px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 142px;
+    margin-right: 80px;
+  }
 }
 
 .top-catalog__item:last-child {

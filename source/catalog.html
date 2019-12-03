@@ -10,7 +10,13 @@
 <body class="page">
 
   <header class="page__header header container">
-    <a class="header__logo logo"><img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина CAT ENERGY"></a>
+    <a class="header__logo logo">
+      <picture class="logo__set-images">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип магазина CAT ENERGY">
+      </picture>
+    </a>
     <nav class="header__nav nav">
       <button class="nav__toggle-burger toggle-burger toggle-burger--active" type="button"><span class="visually-hidden">Показать меню</span></button>
       <ul class="nav__menu menu">
@@ -276,7 +282,7 @@
       <div class="contact__map-interactive map-interactive"></div>
     </section>
     <div class="footer__bottom">
-      <div class="container">
+      <div class="footer__inner container">
         <a class="footer__logo"><img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина CAT ENERGY"></a>
         <section class="footer__social-links social-links">
           <h2 class="visually-hidden">Мы в соцсетях</h2>

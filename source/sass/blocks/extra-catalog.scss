@@ -21,9 +21,9 @@
 }
 
 .extra-catalog__bonus-text {
+  @include font-alt;
   display: block;
   width: 165px;
-  @include font-alt;
   font-size: 16px;
   line-height: 1.25;
   color: $color-text-alt;

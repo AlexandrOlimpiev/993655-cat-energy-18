@@ -1,9 +1,21 @@
 .cart-product {
   padding-bottom: 25px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 245px;
+  }
 }
 
 .cart-product__inner {
   display: flex;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
 }
 
 .cart-product__title {

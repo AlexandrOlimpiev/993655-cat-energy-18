@@ -18,6 +18,10 @@ $color-title: $color-black-three; //Цвет заголовков и пункт�
 $color-label: $color-black-two; //Цвет меток формы
 $color-text-alt: $color-white; //Цвет шрифта для цветных элементов
 
+$breakpoint-mobile:320px; //брейкпоинт планшета
+$breakpoint-tablet:768px; //брейкпоинт планшета
+$breakpoint-desktop:1440px; //брейкпоинт десктопа
 
-$max-width:320px; //ширина страницы
-$side-padding:20px; //боковые отступы в блоках
+$side-padding-mobile:20px; //боковые отступы в блоках
+$side-padding-tablet:30px;
+$side-padding-desktop:110px;

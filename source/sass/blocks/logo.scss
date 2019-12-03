@@ -1,4 +1,25 @@
 .logo {
   display: block;
-  width: 100%;
+  padding: 11px 20px 15px 20px;
+  margin-right: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0;
+    margin-right: 96px;
+  }
+}
+
+.logo__image {
+  width: 191px;
+  height: 39px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 174px;
+    height: 59px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 203px;
+    height: 60px;
+  }
 }

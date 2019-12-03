@@ -1,13 +1,33 @@
 .promo {
+  position: relative;
   text-align: center;
   padding-top: 28px;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-height: 499px;
+    padding-top: 113px;
+  }
 }
 
 .promo__title {
   @include font-default;
   font-size: 36px;
   line-height: 1;
-  margin: 0 0 25px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 60px;
+    width: 414px;
+    margin-bottom: 33px;
+    margin-left: 90px;
+  }
 }
 
 .promo__text {
@@ -15,5 +35,47 @@
   font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
-  margin: 0 0 28px;
+  margin-bottom: 28px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-bottom: 48px;
+    margin-left: 90px;
+    font-size: 20px;
+    width: 414px;
+  }
+}
+
+.promo__button {
+  @media (min-width: $breakpoint-tablet) {
+    width: 245px;
+    margin-left: 90px;
+    order: 1;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: static;
+    width: 245px;
+  }
+}
+
+.promo__set-images {
+  order: 2;
+  z-index: -1;
+}
+
+.promo__image {
+  @media (min-width: $breakpoint-tablet) {
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 490px;
+  }
 }
