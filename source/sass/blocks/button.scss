@@ -3,24 +3,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 8px;
   border: none;
   box-shadow: none;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 20px;
   text-transform: uppercase;
   color: $color-text-alt;
   background-color: $color-design;
   min-height: 40px;
   text-decoration: none;
-}
 
-.button--small {
-  font-size: 14px;
-  line-height: 1.29;
-}
+  &:hover {
+    background-color: $color-green;
+  }
 
-.button--grey {
-  background-color: $color-bg-alt;
-  color: $color-content;
+  &:active {
+    background-color: $color-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    background-color: $color-bg-alt;
+    color: $color-content;
+
+    &:hover {
+      background-color: $color-white-five;
+    }
+
+    &:active {
+      background-color: $color-white-five;
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
 }

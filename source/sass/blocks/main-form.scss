@@ -1,25 +1,56 @@
 .main-form {
+  @include side-padding;
   @include font-default;
-  padding-top: 20px;
-  padding-bottom: 34px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 32px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 45px;
+    padding-bottom: 86px;
+  }
+
 
   h1 {
-    @include side-padding;
     font-weight: normal;
     font-size: 36px;
-    line-height: 1.67;
+    line-height: 60px;
     color: $color-title;
     margin: 0;
     margin-bottom: 24px;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 60px;
+      margin-bottom: 56px;
+      padding-left: 0;
+    }
   }
 
   p {
-    @include side-padding;
     font-size: 14px;
-    line-height: 1.29;
+    line-height: 18px;
     color: $color-title;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
+    width: 270px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-right: 0;
+      padding-left: 40px;
+      margin-bottom: 65px;
+      font-size: 20px;
+      line-height: 30px;
+      width: 400px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding: 0;
+      width: 385px;
+    }
   }
 }

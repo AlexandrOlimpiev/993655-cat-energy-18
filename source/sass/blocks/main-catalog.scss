@@ -1,14 +1,31 @@
 .main-catalog {
   @include side-padding;
-  padding-top: 20px;
+  padding-top: 15px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 32px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 46px;
+  }
 
   h1 {
-    @include side-padding;
     @include font-default;
     font-size: 36px;
     line-height: 1.67;
     color: $color-title;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin-bottom: 25px;
+      font-size: 60px;
+      line-height: 1;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      margin-bottom: 23px;
+    }
   }
 }

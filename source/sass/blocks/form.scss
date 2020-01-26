@@ -1,115 +1,499 @@
 .form {
   @include font-default;
 
+  ul {
+    @include reset-list;
+  }
+
   li {
     display: flex;
+    justify-content: start;
     align-items: center;
+  }
+
+  label {
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-label;
+    text-transform: uppercase;
+    flex-shrink: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  input,
+  textarea {
+    @include font-default;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 14px;
+    border: 1px solid rgba($color:$color-pinkish-grey, $alpha: 0.5);
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &::placeholder {
+      @include font-default;
+      font-size: 16px;
+      line-height: 18px;
+      color: $color-content;
+      text-transform: uppercase;
+      border-color: $color-pinkish-grey;
+
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
+    &:hover {
+      border-color: $color-pinkish-grey;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid $color-greyish-brown;
+    }
+  }
+
+  .input-error {
+    border: 2px solid $color-peachy-pink;
+  }
+
+  .input-error + svg {
+    fill: $color-peachy-pink;
+  }
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    margin-bottom: 19px;
+  }
+}
+
+.form__legend {
+  position: relative;
+  padding: 29px 20px 0 20px;
+  margin-left: -20px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-title;
+  display: block;
+  background-color: $color-bg;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 40px;
+    left: -50vw;
+    width: 150vw;
+    height: 3px;
+    background-color: $color-design;
+    z-index: -1;
+
+    @media (min-width: $breakpoint-tablet) {
+      top: 50px;
+    }
   }
 }
 
 .form__fieldset {
-  @include side-padding;
   border: none;
+  padding: 0;
   margin: 0;
-}
 
-.form__button {
-  margin: 34px 0 22px 0;
-  width: 100%;
-}
+  @media (min-width: $breakpoint-tablet) {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
 
-.form__list {
-  @include reset-list;
-}
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0;
+  }
 
-.form__legend {
-  padding: 31px 0;
-  font-size: 24px;
-  line-height: 1;
-  color: $color-title;
-}
+  &--text {
+    padding-bottom: 22px;
 
-.form__label {
-  font-size: 16px;
-  line-height: 1.13;
-  color: $color-label;
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
+    @media (min-width: $breakpoint-desktop) {
+      width: 570px;
+    }
 
-.form__input,
-.form__textarea {
-  @include font-default;
-  padding: 0 16px;
-  flex-grow: 1;
+    li {
+      margin-bottom: 14px;
 
-  &::placeholder {
-    @include font-default;
-    font-size: 16px;
-    line-height: 1.13;
-    color: $color-content;
-    text-transform: uppercase;
-    border-color: $color-pinkish-grey;
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 20px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    input {
+      min-height: 45px;
+      margin-left: 15px;
+      flex-grow: 1;
+
+      @media (min-width: $breakpoint-tablet) {
+        min-height: 52px;
+        margin-left: 17px;
+        padding-left: 19px;
+      }
+    }
+  }
+
+  &--radio {
+    border: 1px solid $color-white-three;
+    padding: 21px 20px 21px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 0;
+      border: none;
+      padding: 50px 37px 47px 40px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding: 0;
+      margin-left: 80px;
+      width: 570px;
+    }
+
+    ul {
+      @media (min-width: $breakpoint-tablet) {
+        border: 1px solid $color-white-three;
+        padding: 25px 28px;
+      }
+    }
+
+    li {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+        background: $color-bg;
+        border-radius: 50%;
+        border: 1px solid $color-pinkish-grey;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  &--date {
+    padding-top: 34px;
+    padding-bottom: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-bottom: 17px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding-bottom: 39px;
+    }
+
+    legend {
+      width: 223px;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: auto;
+      }
+    }
+
+    ul {
+      @media (min-width: $breakpoint-tablet) {
+        margin-top: 41px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+      }
+    }
+
+    li {
+      margin-bottom: 13px;
+      position: relative;
+
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        width: 570px;
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    svg {
+      position: absolute;
+      right: 17px;
+    }
+
+    input {
+      min-height: 45px;
+      margin-left: 10px;
+      padding-right: 40px;
+      flex-grow: 1;
+
+      @media (min-width: $breakpoint-tablet) {
+        min-height: 52px;
+        margin-left: 14px;
+        padding-left: 19px;
+      }
+    }
+
+    input:focus + svg {
+      fill: $color-design;
+    }
+  }
+
+  &--textarea {
+    padding-bottom: 0;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding-bottom: 37px;
+      padding-top: 20px;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      padding-bottom: 39px;
+    }
+
+    legend {
+      @media (min-width: $breakpoint-tablet) {
+        padding-top: 28px;
+      }
+    }
+
+    .form__textarea {
+      margin-top: 35px;
+      width: 100%;
+      height: 150px;
+      padding: 13px;
+      resize: none;
+
+      @media (min-width: $breakpoint-tablet) {
+        margin-top: 56px;
+        padding: 15px 18px;
+        height: 174px;
+      }
+    }
+  }
+
+  &--checkbox {
+    padding-top: 0;
+    padding-bottom: 35px;
+
+    legend {
+      padding-top: 23px;
+      margin-bottom: 35px;
+
+      @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 57px;
+      }
+    }
+
+    ul {
+      @media (min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    li {
+      margin-bottom: 12px;
+      flex-grow: 0;
+
+      @media (min-width: $breakpoint-tablet) {
+        width: 280px;
+        margin-bottom: 32px;
+      }
+
+      @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 0;
+        margin-left: 85px;
+        width: 240px;
+      }
+
+      &:nth-last-child(-n+2) {
+        @media (min-width: $breakpoint-tablet) {
+          margin-bottom: 0;
+        }
+      }
+
+      &:nth-child(2n) {
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+          margin-left: 65px;
+        }
+      }
+
+      &:first-child {
+        @media (min-width: $breakpoint-desktop) {
+          margin-left: 0;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 16px;
+        background: $color-bg;
+        border: 1px solid $color-pinkish-grey;
+
+        @media (min-width: $breakpoint-tablet) {
+          width: 40px;
+          height: 40px;
+          margin-right: 19px;
+        }
+      }
+    }
   }
 }
 
-.form__textarea {
-  width: 100%;
-  height: 250px;
-  padding: 13px 12px;
+.form__fieldset--radio label:hover::before,
+.form__fieldset--checkbox label:hover::before {
+  border-color: $color-pinkish-grey-two;
 }
 
-.form__input[type="email"],
-.form__input[type="tel"],
-.form__input[type="text"] {
-  min-height: 45px;
-  margin-left: 15px;
+.form__fieldset--radio label:active,
+.form__fieldset--checkbox label:active {
+  opacity: 0.3;
+
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.form__fieldset--radio input:checked + label::before {
+  background: radial-gradient($color-design 0, $color-design 6px, $color-bg 7px, $color-bg 15px);
+
+  @media (min-width: $breakpoint-tablet) {
+    background: radial-gradient($color-design 0, $color-design 9px, $color-bg 10px, $color-bg 20px);
+  }
+}
+
+.form__fieldset--checkbox input:checked + label::after {
+  position: absolute;
+  content: "";
+  left: 5px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    left: 10px;
+  }
+}
+
+.form__fieldset--radio input:focus + label::before,
+.form__fieldset--checkbox input:focus + label::before {
+  border: 2px solid $color-greyish-brown;
+}
+
+.form__button-wraper {
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    padding: 0 40px;
+    margin-top: 19px;
+    align-items: center;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-top: 26px;
+    padding: 0;
+  }
+}
+
+.form__button {
+  margin-bottom: 21px;
+  width: 280px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0;
+    width: 283px;
+    font-size: 20px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 568px;
+  }
 }
 
 .form__details {
   @include font-alt;
   display: block;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   color: $color-content;
   text-align: center;
-}
 
-.form__fieldset--text,
-.form__fieldset--date {
-  li {
-    margin-bottom: 14px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.form__fieldset--radio,
-.form__fieldset--checkbox {
-  li {
-    margin-bottom: 13px;
-    padding-left: 46px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    margin-left: 62px;
   }
 
-  .form__input {
-    display: none;
+  @media (min-width: $breakpoint-desktop) {
+    margin-left: 82px;
   }
-}
-
-.form__fieldset--text {
-  padding-top: 5px;
-  padding-bottom: 23px;
-}
-
-.form__fieldset--radio {
-  padding-top: 21px;
-  padding-bottom: 22px;
-  border-top: 1px solid $color-white-three;
-  border-bottom: 1px solid $color-white-three;
 }

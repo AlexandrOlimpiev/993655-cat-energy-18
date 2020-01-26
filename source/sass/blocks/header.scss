@@ -2,21 +2,17 @@
   @include side-padding;
   display: block;
   position: relative;
+  border-bottom: 1px solid $color-white-three;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: none;
   }
 
   @media (min-width: $breakpoint-desktop) {
     padding-top: 53px;
-  }
-}
-
-.header__logo {
-  border-bottom: 1px solid $color-white-three;
-
-  @media (min-width: $breakpoint-tablet) {
-    border-bottom: none;
+    padding-bottom: 29px;
   }
 }

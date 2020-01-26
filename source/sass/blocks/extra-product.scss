@@ -1,23 +1,100 @@
 .extra-product {
-  padding: 14px 0 17px 0;
+  padding: 13px 0 17px 0;
+  border-bottom: 1px solid $color-white-three;
+
+  &:first-child {
+    border-top: 1px solid $color-white-three;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 25px 37px 27px 38px;
+    border-left: 1px solid $color-white-three;
+    border-right: 1px solid $color-white-three;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    padding: 15px 0 16px 0;
+  }
+}
+
+.extra-produc__info {
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 650px;
+    margin: 0;
+    align-items: center;
+  }
 }
 
 .extra-product__title {
   @include font-default;
   font-size: 16px;
-  line-height: 1;
+  line-height: 16px;
   color: $color-label;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0;
+  }
 }
 
-.extra-product__info {
+.extra-product__date {
+  @include font-alt;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-content;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 8px;
+  }
 }
 
-.extra-product__size,
 .extra-product__price {
-  @include font-alt;
-  font-size: 14px;
-  line-height: 1;
-  color: $color-content;
+  @media (min-width: $breakpoint-tablet) {
+    width: 94px;
+    text-align: right;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 81px;
+    text-align: left;
+  }
+}
+
+.extra-product__size {
+  @media (min-width: $breakpoint-tablet) {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 245px;
+    text-align: left;
+    flex-grow: 0;
+  }
 }

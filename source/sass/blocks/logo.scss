@@ -1,11 +1,24 @@
 .logo {
   display: block;
-  padding: 11px 20px 15px 20px;
+  padding-top: 11px;
+  padding-bottom: 15px;
   margin-right: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     padding: 0;
-    margin-right: 96px;
+    margin-right: 94px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin-right: auto;
   }
 }
 
@@ -15,11 +28,10 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: 174px;
-    height: 59px;
+    height: 60px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 203px;
-    height: 60px;
   }
 }

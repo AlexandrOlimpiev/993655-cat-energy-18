@@ -1,36 +1,120 @@
 .menu {
   @include reset-list;
-  display: block;
+  display: none;
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (max-width: $breakpoint-tablet) {
+    &--no-js {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
+    margin: 0;
+    flex-grow: 1;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-left: 131px;
   }
 }
 
 .menu__item {
-  border-bottom: 1px solid $color-white-three;
+  display: block;
+  border-top: 1px solid $color-white-three;
 
   @media (min-width: $breakpoint-tablet) {
-    border-bottom: none;
+    border-top: none;
+    margin-left: auto;
+    padding-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+      padding-left: 0;
+    }
   }
 }
 
 .menu__link {
   @include reset-link;
   @include font-default;
-  font-weight: 500;
   font-size: 20px;
-  line-height: 1;
+  line-height: 20px;
   color: $color-title;
-  padding: 24px 5px;
+  padding: 23px 10px 22px 10px;
   text-transform: uppercase;
   text-align: center;
 
+  &:hover[href] {
+    color: rgba($color: $color-title, $alpha: 0.6);
+  }
+
+  &:active[href] {
+    color: rgba($color: $color-title, $alpha: 0.3);
+  }
+
   @media (min-width: $breakpoint-tablet) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 9px 0 7px 0;
     font-size: 18px;
-    line-height: 1.39;
+    line-height: 25px;
     color: $color-label;
+
+    &--active {
+      border-bottom: 2px solid $color-design;
+    }
+
+    &:hover[href] {
+      color: rgba($color: $color-label, $alpha: 0.6);
+    }
+
+    &:active[href] {
+      color: rgba($color: $color-label, $alpha: 0.3);
+    }
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 14px 0 8px 0;
+    font-size: 20px;
+    color: $color-title;
+
+    &:hover[href] {
+      color: rgba($color: $color-title, $alpha: 0.6);
+    }
+
+    &:active[href] {
+      color: rgba($color: $color-title, $alpha: 0.3);
+    }
+  }
+}
+
+.menu--index {
+  .menu__link {
+    @media (min-width: $breakpoint-desktop) {
+      color: $color-white;
+
+      &--active {
+        border-bottom: 2px solid $color-white;
+      }
+
+      &:hover[href] {
+        color: rgba($color: $color-white, $alpha: 0.6);
+      }
+
+      &:active[href] {
+        color: rgba($color: $color-white, $alpha: 0.3);
+      }
+    }
+  }
+
+  .menu__link--active {
+    border-bottom: 2px solid $color-white;
   }
 }
