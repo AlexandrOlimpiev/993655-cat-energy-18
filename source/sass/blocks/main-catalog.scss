@@ -1,5 +1,6 @@
 .main-catalog {
   @include side-padding;
+  display: block;
   padding-top: 15px;
 
   @media (min-width: $breakpoint-tablet) {

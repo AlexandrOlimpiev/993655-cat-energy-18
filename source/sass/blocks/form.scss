@@ -30,27 +30,12 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    position: relative;
     padding: 0 14px;
     border: 1px solid rgba($color:$color-pinkish-grey, $alpha: 0.5);
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 20px;
       line-height: 20px;
-    }
-
-    &::placeholder {
-      @include font-default;
-      font-size: 16px;
-      line-height: 18px;
-      color: $color-content;
-      text-transform: uppercase;
-      border-color: $color-pinkish-grey;
-
-      @media (min-width: $breakpoint-tablet) {
-        font-size: 20px;
-        line-height: 20px;
-      }
     }
 
     &:hover {
@@ -60,6 +45,21 @@
     &:focus {
       outline: none;
       border: 2px solid $color-greyish-brown;
+    }
+  }
+
+
+  &::placeholder {
+    @include font-default;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-content;
+    text-transform: uppercase;
+    border-color: $color-pinkish-grey;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 20px;
     }
   }
 
@@ -272,6 +272,9 @@
 
     svg {
       position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 18px;
       right: 17px;
     }
 
