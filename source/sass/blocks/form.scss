@@ -30,27 +30,12 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    position: relative;
     padding: 0 14px;
     border: 1px solid rgba($color:$color-pinkish-grey, $alpha: 0.5);
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 20px;
       line-height: 20px;
-    }
-
-    &::placeholder {
-      @include font-default;
-      font-size: 16px;
-      line-height: 18px;
-      color: $color-content;
-      text-transform: uppercase;
-      border-color: $color-pinkish-grey;
-
-      @media (min-width: $breakpoint-tablet) {
-        font-size: 20px;
-        line-height: 20px;
-      }
     }
 
     &:hover {
@@ -63,11 +48,26 @@
     }
   }
 
+
+  &::placeholder {
+    @include font-default;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-content;
+    text-transform: uppercase;
+    border-color: $color-pinkish-grey;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
   .input-error {
     border: 2px solid $color-peachy-pink;
   }
 
-  .input-error + svg {
+  .input-error+svg {
     fill: $color-peachy-pink;
   }
 }
@@ -272,6 +272,9 @@
 
     svg {
       position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 18px;
       right: 17px;
     }
 
@@ -288,7 +291,7 @@
       }
     }
 
-    input:focus + svg {
+    input:focus+svg {
       fill: $color-design;
     }
   }
@@ -422,7 +425,7 @@
   }
 }
 
-.form__fieldset--radio input:checked + label::before {
+.form__fieldset--radio input:checked+label::before {
   background: radial-gradient($color-design 0, $color-design 6px, $color-bg 7px, $color-bg 15px);
 
   @media (min-width: $breakpoint-tablet) {
@@ -430,7 +433,7 @@
   }
 }
 
-.form__fieldset--checkbox input:checked + label::after {
+.form__fieldset--checkbox input:checked+label::after {
   position: absolute;
   content: "";
   left: 5px;
@@ -445,8 +448,8 @@
   }
 }
 
-.form__fieldset--radio input:focus + label::before,
-.form__fieldset--checkbox input:focus + label::before {
+.form__fieldset--radio input:focus+label::before,
+.form__fieldset--checkbox input:focus+label::before {
   border: 2px solid $color-greyish-brown;
 }
 
