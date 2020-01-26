@@ -7,7 +7,7 @@
   }
 
   & :nth-child(2n) {
-    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    @media (min-width: $breakpoint-tablet) and (max-width: ($breakpoint-desktop)-1px) {
       margin-right: 0;
     }
   }
@@ -39,4 +39,8 @@
 
 .top-catalog__item:last-child {
   border-bottom: 1px solid $color-white-three;
+
+  @media (min-width: $breakpoint-tablet) {
+    border-bottom: none;
+  }
 }

@@ -3,7 +3,12 @@
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
-    align-items: center;
-    margin-left: auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 50%;
+    flex-grow: 0;
   }
 }

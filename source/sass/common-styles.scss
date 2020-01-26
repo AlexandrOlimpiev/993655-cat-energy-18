@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -27,16 +33,13 @@ html {
 
 .container {
   width: $breakpoint-mobile;
+  margin: 0 auto;
 
   @media (min-width: $breakpoint-tablet) {
-    min-width: $breakpoint-tablet;
     width: $breakpoint-tablet;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    min-width: $breakpoint-desktop;
     width: $breakpoint-desktop;
   }
-
-  margin: 0 auto;
 }

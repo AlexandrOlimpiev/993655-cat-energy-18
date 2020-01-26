@@ -1,24 +1,39 @@
 .features {
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 42px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 45px;
+    padding-bottom: 58px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding-top: 73px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .features__title {
   @include font-default;
   font-weight: inherit;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: 60px;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .features__list {
-  @include font-alt;
-  font-size: 14px;
-  line-height: 1.29;
-  padding: 10px 5px 22px 80px;
+  padding: 8px 3px 0 0;
   list-style: none;
   margin: 0;
+  counter-reset: feature;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -28,18 +43,97 @@
 }
 
 .features__item {
-  display: block;
+  display: flex;
   margin-bottom: 20px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-color: $color-design;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1)::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &:nth-child(3)::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &:nth-child(4)::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 
   @media (min-width: $breakpoint-tablet) {
-    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 324px;
+    position: relative;
+    padding-bottom: 44px;
+    margin-bottom: 89px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 32px;
+    }
+
+    &::after {
+      @include font-default;
+      counter-increment: feature;
+      content: counter(feature);
+      position: absolute;
+      top: -40px;
+      left: 114px;
+      z-index: -1;
+      font-size: 281px;
+      line-height: 281px;
+      color: $color-bg-alt;
+    }
+
+    &:nth-child(2n) {
+      margin-left: 60px;
+    }
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 25%;
+    width: 245px;
+    margin-bottom: 0;
+
+    &:nth-child(n+2) {
+      margin-left: 80px;
+    }
   }
 }
 
 .features__item:last-child {
   margin-bottom: 0;
+}
+
+.features__text {
+  @include font-alt;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

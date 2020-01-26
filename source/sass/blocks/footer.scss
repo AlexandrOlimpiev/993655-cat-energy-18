@@ -1,5 +1,9 @@
-.footer__bottom {
+.footer {
   background-color: $color-bg-alt;
+
+  a {
+    cursor: pointer;
+  }
 }
 
 .footer__inner {
@@ -8,26 +12,57 @@
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     justify-content: space-between;
+    padding-top: 28px;
+    padding-bottom: 29px;
   }
 }
 
 .footer__developer-link {
   @include font-alt;
   @include reset-link;
-  padding: 31px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 27px;
   font-size: 16px;
-  line-height: 1;
+  line-height: 16px;
   margin-right: auto;
   color: $color-content;
 
   @media (min-width: $breakpoint-tablet) {
     margin-right: 0;
+    padding-top: 25px;
+  }
+
+  &:hover {
+    .footer__developer-icon {
+      fill: $color-design;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__developer-icon {
+  width: 27px;
+  height: 34px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-right: 0;
+    margin-left: 23px;
   }
 }
 
 .footer__logo {
   display: flex;
   padding: 39px 10px 31px 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 38px 19px 32px 0;
+  }
 }
 
 .footer__logo-image {
