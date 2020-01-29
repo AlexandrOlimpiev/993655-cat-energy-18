@@ -12,11 +12,11 @@
   }
 
   label {
+    flex-shrink: 0;
     font-size: 16px;
     line-height: 18px;
     color: $color-label;
     text-transform: uppercase;
-    flex-shrink: 0;
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 20px;
@@ -27,11 +27,11 @@
   input,
   textarea {
     @include font-default;
+    padding: 0 14px;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    padding: 0 14px;
-    border: 1px solid rgba($color:$color-pinkish-grey, $alpha: 0.5);
+    border: 1px solid rgba($color: $color-pinkish-grey, $alpha: 0.5);
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 20px;
@@ -43,8 +43,8 @@
     }
 
     &:focus {
-      outline: none;
       border: 2px solid $color-greyish-brown;
+      outline: none;
     }
   }
 
@@ -84,32 +84,32 @@
 
 .form__legend {
   position: relative;
-  padding: 29px 20px 0 20px;
+  display: block;
   margin-left: -20px;
+  padding: 29px 20px 0 20px;
   font-size: 24px;
   line-height: 24px;
   color: $color-title;
-  display: block;
   background-color: $color-bg;
 
   @media (min-width: $breakpoint-tablet) {
+    margin-left: -40px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-size: 36px;
     line-height: 36px;
-    margin-left: -40px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    display: block;
     top: 40px;
     left: -50vw;
+    z-index: -1;
+    display: block;
     width: 150vw;
     height: 3px;
     background-color: $color-design;
-    z-index: -1;
 
     @media (min-width: $breakpoint-tablet) {
       top: 50px;
@@ -118,13 +118,13 @@
 }
 
 .form__fieldset {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: none;
 
   @media (min-width: $breakpoint-tablet) {
-    padding-left: 40px;
     padding-right: 37px;
+    padding-left: 40px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -151,9 +151,9 @@
     }
 
     input {
+      flex-grow: 1;
       min-height: 45px;
       margin-left: 15px;
-      flex-grow: 1;
 
       @media (min-width: $breakpoint-tablet) {
         min-height: 52px;
@@ -164,27 +164,27 @@
   }
 
   &--radio {
-    border: 1px solid $color-white-three;
-    padding: 21px 20px 21px 20px;
-    margin-left: -20px;
     margin-right: -20px;
+    margin-left: -20px;
+    padding: 21px 20px 21px 20px;
+    border: 1px solid $color-white-three;
 
     @media (min-width: $breakpoint-tablet) {
       margin: 0;
-      border: none;
       padding: 50px 37px 47px 40px;
+      border: none;
     }
 
     @media (min-width: $breakpoint-desktop) {
-      padding: 0;
-      margin-left: 80px;
       width: 570px;
+      margin-left: 80px;
+      padding: 0;
     }
 
     ul {
       @media (min-width: $breakpoint-tablet) {
-        border: 1px solid $color-white-three;
         padding: 25px 28px;
+        border: 1px solid $color-white-three;
       }
     }
 
@@ -202,13 +202,14 @@
 
       &::before {
         content: "";
+
         display: block;
         width: 30px;
         height: 30px;
         margin-right: 16px;
         background: $color-bg;
-        border-radius: 50%;
         border: 1px solid $color-pinkish-grey;
+        border-radius: 50%;
 
         @media (min-width: $breakpoint-tablet) {
           width: 40px;
@@ -253,8 +254,8 @@
     }
 
     li {
-      margin-bottom: 13px;
       position: relative;
+      margin-bottom: 13px;
 
       @media (min-width: $breakpoint-tablet) {
         margin-bottom: 20px;
@@ -272,17 +273,17 @@
 
     svg {
       position: absolute;
-      width: 21px;
-      height: 21px;
       top: 18px;
       right: 17px;
+      width: 21px;
+      height: 21px;
     }
 
     input {
+      flex-grow: 1;
       min-height: 45px;
       margin-left: 10px;
       padding-right: 40px;
-      flex-grow: 1;
 
       @media (min-width: $breakpoint-tablet) {
         min-height: 52px;
@@ -300,8 +301,8 @@
     padding-bottom: 0;
 
     @media (min-width: $breakpoint-tablet) {
-      padding-bottom: 37px;
       padding-top: 20px;
+      padding-bottom: 37px;
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -315,16 +316,16 @@
     }
 
     .form__textarea {
-      margin-top: 35px;
       width: 100%;
       height: 150px;
+      margin-top: 35px;
       padding: 13px;
       resize: none;
 
       @media (min-width: $breakpoint-tablet) {
+        height: 174px;
         margin-top: 56px;
         padding: 15px 18px;
-        height: 174px;
       }
     }
   }
@@ -334,8 +335,8 @@
     padding-bottom: 35px;
 
     legend {
-      padding-top: 23px;
       margin-bottom: 35px;
+      padding-top: 23px;
 
       @media (min-width: $breakpoint-tablet) {
         margin-bottom: 57px;
@@ -350,8 +351,8 @@
     }
 
     li {
-      margin-bottom: 12px;
       flex-grow: 0;
+      margin-bottom: 12px;
 
       @media (min-width: $breakpoint-tablet) {
         width: 280px;
@@ -359,9 +360,9 @@
       }
 
       @media (min-width: $breakpoint-desktop) {
+        width: 240px;
         margin-bottom: 0;
         margin-left: 85px;
-        width: 240px;
       }
 
       &:nth-last-child(-n+2) {
@@ -388,9 +389,9 @@
     }
 
     label {
+      position: relative;
       display: flex;
       align-items: center;
-      position: relative;
 
       &::before {
         content: "";
@@ -434,8 +435,8 @@
 }
 
 .form__fieldset--checkbox input:checked + label::after {
-  position: absolute;
   content: "";
+  position: absolute;
   left: 5px;
   width: 22px;
   height: 17px;
@@ -456,9 +457,9 @@
 .form__button-wraper {
   @media (min-width: $breakpoint-tablet) {
     display: flex;
-    padding: 0 40px;
-    margin-top: 19px;
     align-items: center;
+    margin-top: 19px;
+    padding: 0 40px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -468,14 +469,14 @@
 }
 
 .form__button {
-  margin-bottom: 21px;
   width: 280px;
+  margin-bottom: 21px;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0;
     width: 283px;
-    font-size: 20px;
     min-height: 52px;
+    margin: 0;
+    font-size: 20px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -488,12 +489,12 @@
   display: block;
   font-size: 14px;
   line-height: 16px;
-  color: $color-content;
   text-align: center;
+  color: $color-content;
 
   @media (min-width: $breakpoint-tablet) {
-    font-size: 16px;
     margin-left: 62px;
+    font-size: 16px;
   }
 
   @media (min-width: $breakpoint-desktop) {

@@ -1,8 +1,8 @@
 .logo {
   display: block;
+  margin-right: auto;
   padding-top: 11px;
   padding-bottom: 15px;
-  margin-right: auto;
 
   &:hover {
     opacity: 0.8;
@@ -13,8 +13,8 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
-    padding: 0;
     margin-right: 94px;
+    padding: 0;
   }
 
   @media (min-width: $breakpoint-desktop) {

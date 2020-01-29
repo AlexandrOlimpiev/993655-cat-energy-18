@@ -1,9 +1,9 @@
 .promo-block {
-  padding: 26px 20px 24px 20px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding: 26px 20px 24px 20px;
 
   @media (min-width: $breakpoint-tablet) {
     width: 324px;
@@ -18,16 +18,16 @@
 
   &::before {
     content: "";
-    margin-bottom: 23px;
     width: 31px;
     height: 31px;
+    margin-bottom: 23px;
     background-image: url("../img/icon-plus-mobile.svg");
     opacity: 0.2;
 
     @media (min-width: $breakpoint-tablet) {
-      margin-bottom: 48px;
       width: 61px;
       height: 61px;
+      margin-bottom: 48px;
       background-image: url("../img/icon-plus.svg");
     }
   }
@@ -37,34 +37,34 @@
 .promo-block__title {
   @include font-default;
   margin: 0;
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 20px;
   color: $color-title;
   text-transform: uppercase;
-  margin-bottom: 8px;
 
   @media (min-width: $breakpoint-tablet) {
-    font-size: 20px;
     width: 135px;
-    text-align: center;
     margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
 .promo-block__slogan {
   @include font-alt;
   display: block;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   color: $color-title;
-  margin-bottom: 21px;
 
   @media (min-width: $breakpoint-tablet) {
+    width: 167px;
+    margin-bottom: 83px;
     font-size: 16px;
     line-height: 20px;
-    width: 167px;
     text-align: center;
-    margin-bottom: 83px;
   }
 }
 

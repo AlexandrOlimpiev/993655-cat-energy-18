@@ -20,15 +20,15 @@
 }
 
 .top-catalog__item {
-  border-top: 1px solid $color-white-three;
   margin-right: -20px;
   margin-left: -20px;
+  border-top: 1px solid $color-white-three;
 
   @media (min-width: $breakpoint-tablet) {
-    border-top: none;
     margin: 0;
     margin-top: 140px;
     margin-right: 60px;
+    border-top: none;
   }
 
   @media (min-width: $breakpoint-desktop) {

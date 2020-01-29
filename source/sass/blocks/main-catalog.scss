@@ -13,11 +13,11 @@
 
   h1 {
     @include font-default;
+    margin: 0;
+    margin-bottom: 28px;
     font-size: 36px;
     line-height: 1.67;
     color: $color-title;
-    margin: 0;
-    margin-bottom: 28px;
 
     @media (min-width: $breakpoint-tablet) {
       margin-bottom: 25px;
