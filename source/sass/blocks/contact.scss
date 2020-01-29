@@ -13,16 +13,24 @@
   @media (min-width: $breakpoint-tablet) {
     justify-content: space-between;
     padding: 65px 70px 59px;
+    background-color: $color-bg;
   }
 
   @media (min-width: $breakpoint-desktop) {
     position: absolute;
     top: 95px;
-    left: 40px;
+    right: calc(50% + 40px);
     z-index: 50;
     width: 570px;
     min-height: 201px;
-    background-color: $color-bg;
+    padding-left: 76px;
+    padding-right: 87px;
+  }
+
+  &--inner {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+      background-color: $color-bg-alt;
+    }
   }
 }
 
@@ -55,6 +63,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    text-align: left;
   }
 
   span {

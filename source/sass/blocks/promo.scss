@@ -1,6 +1,7 @@
 .promo {
   position: relative;
-  padding-top: 32px;
+  padding-top: 27px;
+  padding-bottom: 22px;
   text-align: center;
   color: $color-text-alt;
 
@@ -24,6 +25,9 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
+    padding-top: 32px;
+    padding-bottom: 0;
+
     &::after {
       display: none;
     }
@@ -73,8 +77,6 @@
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
-  text-align: left;
-  color: $color-title;
 
   @media (min-width: $breakpoint-tablet) {
     width: 416px;
@@ -82,6 +84,8 @@
     margin-left: 87px;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
+    color: $color-title;
   }
 
   @media (min-width: $breakpoint-desktop) {

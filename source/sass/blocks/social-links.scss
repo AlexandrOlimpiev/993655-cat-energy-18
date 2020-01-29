@@ -15,6 +15,7 @@
 
 .social-links__list {
   @include reset-list;
+  margin: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

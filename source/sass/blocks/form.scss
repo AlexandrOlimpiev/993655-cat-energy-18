@@ -271,10 +271,18 @@
       }
     }
 
-    svg {
+    .form__input-email-icon {
       position: absolute;
-      top: 18px;
+      top: 16px;
       right: 17px;
+      width: 18px;
+      height: 14px;
+    }
+
+    .form__input-phone-icon {
+      position: absolute;
+      top: 14px;
+      right: 13px;
       width: 21px;
       height: 21px;
     }
@@ -283,7 +291,7 @@
       flex-grow: 1;
       min-height: 45px;
       margin-left: 10px;
-      padding-right: 40px;
+      padding-right: 30px;
 
       @media (min-width: $breakpoint-tablet) {
         min-height: 52px;
