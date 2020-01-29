@@ -1,39 +1,39 @@
 .button {
   @include font-default;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  min-height: 40px;
   padding: 8px;
-  border: none;
-  box-shadow: none;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   color: $color-text-alt;
-  background-color: $color-design;
-  min-height: 40px;
+  text-transform: uppercase;
   text-decoration: none;
+  background-color: $color-design;
+  border: none;
+  box-shadow: none;
 
   &:hover {
     background-color: $color-green;
   }
 
   &:active {
-    background-color: $color-green;
     color: rgba(255, 255, 255, 0.3);
+    background-color: $color-green;
   }
 
   &--grey {
-    background-color: $color-bg-alt;
     color: $color-content;
+    background-color: $color-bg-alt;
 
     &:hover {
       background-color: $color-white-five;
     }
 
     &:active {
-      background-color: $color-white-five;
       color: rgba(68, 68, 68, 0.3);
+      background-color: $color-white-five;
     }
   }
 }

@@ -1,7 +1,7 @@
 .header {
   @include side-padding;
-  display: block;
   position: relative;
+  display: block;
   border-bottom: 1px solid $color-white-three;
 
   @media (min-width: $breakpoint-tablet) {

@@ -17,22 +17,22 @@
 
 .features__title {
   @include font-default;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: inherit;
   font-size: 36px;
   line-height: 60px;
-  margin: 0;
-  margin-bottom: 20px;
 
   @media (min-width: $breakpoint-tablet) {
-    font-size: 60px;
     margin-bottom: 72px;
+    font-size: 60px;
   }
 }
 
 .features__list {
+  margin: 0;
   padding: 8px 3px 0 0;
   list-style: none;
-  margin: 0;
   counter-reset: feature;
 
   @media (min-width: $breakpoint-tablet) {
@@ -44,19 +44,19 @@
 
 .features__item {
   display: flex;
-  margin-bottom: 20px;
   align-items: center;
+  margin-bottom: 20px;
 
   &::before {
     content: "";
     display: block;
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
-    flex-shrink: 0;
     margin-right: 20px;
     background-color: $color-design;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
@@ -93,12 +93,12 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     width: 324px;
-    position: relative;
-    padding-bottom: 44px;
     margin-bottom: 89px;
+    padding-bottom: 44px;
 
     &::before {
       width: 80px;
@@ -108,7 +108,6 @@
 
     &::after {
       @include font-default;
-      counter-increment: feature;
       content: counter(feature);
       position: absolute;
       top: -40px;
@@ -117,6 +116,7 @@
       font-size: 281px;
       line-height: 281px;
       color: $color-bg-alt;
+      counter-increment: feature;
     }
 
     &:nth-child(2n) {

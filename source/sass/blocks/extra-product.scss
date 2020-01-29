@@ -8,8 +8,8 @@
 
   @media (min-width: $breakpoint-tablet) {
     padding: 25px 37px 27px 38px;
-    border-left: 1px solid $color-white-three;
     border-right: 1px solid $color-white-three;
+    border-left: 1px solid $color-white-three;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -25,20 +25,20 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
+    align-items: center;
     width: 650px;
     margin: 0;
-    align-items: center;
   }
 }
 
 .extra-product__title {
   @include font-default;
+  margin: 0;
+  margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   color: $color-label;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 13px;
 
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
@@ -63,10 +63,10 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
-    font-size: 16px;
-    line-height: 20px;
     margin: 0;
     padding-top: 4px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -93,8 +93,8 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
+    flex-grow: 0;
     width: 245px;
     text-align: left;
-    flex-grow: 0;
   }
 }

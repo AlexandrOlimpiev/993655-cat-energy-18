@@ -1,11 +1,13 @@
 @mixin reset-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 @mixin reset-link {
   display: block;
+
   text-decoration: none;
 }
 
@@ -17,24 +19,24 @@
 }
 
 @mixin font-default {
+  font-weight: normal;
   font-family: "Oswald",
     "Arial",
     sans-serif;
-  font-weight: normal;
   font-stretch: normal;
 }
 
 @mixin font-alt {
+  font-weight: normal;
   font-family: "Arial",
     sans-serif;
-  font-weight: normal;
   font-stretch: normal;
 }
 
 @mixin fieldset-reset {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
 @mixin side-padding {

@@ -1,18 +1,18 @@
 .cart-product {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 24px;
   padding-right: 20px;
+  padding-bottom: 24px;
   padding-left: 20px;
 
   @media (min-width: $breakpoint-tablet) {
-    width: 324px;
     flex-direction: column;
     align-items: center;
-    background-color: $color-bg-alt;
+    width: 324px;
     padding-right: 37px;
-    padding-left: 38px;
     padding-bottom: 40px;
+    padding-left: 38px;
+    background-color: $color-bg-alt;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -23,34 +23,34 @@
 .cart-product__description {
   display: flex;
   flex-direction: column;
-  padding: 21px 0 22px 0;
   width: 50%;
+  padding: 21px 0 22px 0;
 
   @media (min-width: 768px) {
     width: 100%;
-    padding-top: 37px;
     margin-bottom: 10px;
+    padding-top: 37px;
   }
 }
 
 .cart-product__title {
   @include font-default;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  line-height: 20px;
-  color: $color-title;
-  text-transform: uppercase;
   max-width: 74px;
   margin: 0;
   margin-bottom: 13px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-title;
+  text-transform: uppercase;
+  font-stretch: normal;
 
   @media (min-width: 768px) {
     max-width: 130px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
 }
 
@@ -64,17 +64,17 @@
 
   &--image {
     @media (min-width: 768px) {
-      height: 208px;
       align-items: flex-end;
+      height: 208px;
       margin: -82px -37px 0 -38px;
     }
   }
 }
 
 .cart-product__image {
-  border: none;
   width: 140px;
   height: 144px;
+  border: none;
 
   @media (min-width: 768px) {
     width: 324px;
@@ -91,10 +91,10 @@
   @include font-alt;
   display: flex;
   font-weight: normal;
-  font-stretch: normal;
   font-size: 12px;
   line-height: 14px;
   color: $color-content;
+  font-stretch: normal;
 
   @media (min-width: 768px) {
     font-size: 16px;
@@ -123,10 +123,9 @@
 }
 
 .cart-product__row :last-child {
-  text-align: end;
   padding-right: 0;
+  text-align: end;
 }
-
 
 .cart-product__button {
   width: 100%;

@@ -12,8 +12,8 @@
 
 .product-line__item {
   position: relative;
-  padding: 20px 20px 21px 20px;
   margin-bottom: 20px;
+  padding: 20px 20px 21px 20px;
   background-color: $color-bg-alt;
 
   &::before {
@@ -24,40 +24,40 @@
     display: block;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     background-color: $color-design;
+    border-radius: 50%;
   }
 
   &--slim {
     .product-line__item-icon {
       position: absolute;
-      background-repeat: no-repeat;
       top: 22px;
       left: 30px;
       width: 35px;
       height: 49px;
+      background-repeat: no-repeat;
     }
   }
 
   &--pro {
     .product-line__item-icon {
       position: absolute;
-      background-repeat: no-repeat;
       top: 35px;
       left: 13px;
       width: 67px;
       height: 28px;
+      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $breakpoint-tablet) {
-    padding: 76px 52px 62px 52px;
     margin-bottom: 30px;
+    padding: 76px 52px 62px 52px;
 
     &::before {
       top: 92px;
-      left: auto;
       right: 62px;
+      left: auto;
       width: 200px;
       height: 200px;
     }
@@ -65,8 +65,8 @@
     &--slim {
       .product-line__item-icon {
         top: 80px;
-        left: auto;
         right: 92px;
+        left: auto;
         width: 141px;
         height: 194px;
       }
@@ -75,8 +75,8 @@
     &--pro {
       .product-line__item-icon {
         top: 135px;
-        left: auto;
         right: 28px;
+        left: auto;
         width: 268px;
         height: 113px;
       }
@@ -84,9 +84,9 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
+    width: 570px;
     margin-right: 80px;
     margin-bottom: 0;
-    width: 570px;
 
     &::before {
       top: 48px;
@@ -126,46 +126,45 @@
 .product-line__title {
   @include font-default;
   display: flex;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  padding-left: 71px;
-  padding-top: 10px;
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 10px;
+  padding-left: 71px;
+  font-size: 24px;
+  line-height: 37px;
   color: $color-title;
-
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-tablet) {
-    font-size: 36px;
-    padding: 0;
     margin-bottom: 25px;
+    padding: 0;
+    font-size: 36px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding-left: 162px;
     margin-bottom: 74px;
+    padding-left: 162px;
   }
 }
 
 .product-line__text {
   @include font-alt;
-  padding: 0;
-  padding-bottom: 21px;
   margin: 0;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  padding-bottom: 21px;
   font-size: 14px;
   line-height: 18px;
   color: $color-content;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   @media (min-width: $breakpoint-tablet) {
+    width: 375px;
+    margin-bottom: 56px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
-    padding: 0;
     border-bottom: none;
-    margin-bottom: 56px;
-    width: 375px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -185,13 +184,13 @@
 }
 
 .product-line__link {
-  @include font-default;
   @include reset-link;
+  @include font-default;
   display: flex;
   font-size: 16px;
   line-height: 16px;
-  text-transform: uppercase;
   color: $color-title;
+  text-transform: uppercase;
 
   &::after {
     content: "";
